@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Sviluppo di una pagina web - Blog Epicode</title>
   </head>
-  <body>
+  <body background="assets/img/sfondo.png">
     <div class="container">
       <div class="header">
         <div class="header-one">
@@ -25,30 +26,36 @@
       </div>
 
       <main class="main">
+        <i class="fa-solid fa-square-pen"></i>
         <div class="title">
           <h2>Come creare un template per i post</h2>
           <p>di Mario Rossi - pubblicato il 25-10-2020</p>
         </div>
+
         <div class="content">
-          <div class="list1">
-            <p>
+          <div>
+            <p class="content1">
               La prima cosa fa fare è suddividere in blocchi logici la pagina,
-              identificando le parti comuni da applicare a tutte le pagine
+              identificando le <span> parti comuni</span> da applicare a tutte
+              le pagine
             </p>
             <p>Le varie aree saranno quindi suddivise in:</p>
-            <ul>
-              <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+            <ul class="content2">
               <li>
-                Contenuti centrali variabili del tag &lt;main&gt; (corpo
-                principale)
+                Contenuti di intestazione del tag <span>&lt;header&gt;</span>
               </li>
               <li>
-                Contenuti di fine pagina, da inserire nel tag &lt;footer&gt;
+                Contenuti centrali variabili del tag
+                <span>&lt;main&gt;</span> (corpo principale)
+              </li>
+              <li>
+                Contenuti di fine pagina, da inserire nel tag
+                <span>&lt;footer&gt;</span>
               </li>
             </ul>
           </div>
 
-          <div class="list2">
+          <div>
             <p>
               Formattazione del codice <br />
               Il testo dell'articolo dovrà essere formattato per identificare
@@ -129,66 +136,67 @@
             allowfullscreen
           ></iframe>
         </div>
-      </main>
 
-      <div class="newsletter">
-        <h3>Novità</h3>
-        <p>
-          Vuoi rimanere aggiornati su altre novità del blog? Iscriviti alla
-          nostra newsletter:
-        </p>
-        <form onsubmit="alert('Modulo inviato correttamente')">
-          <div>
-            <input placeholder="Inserisci la tua email" />
-          </div>
+        <div class="newsletter">
+          <h3>Novità</h3>
           <p>
-            <button type="submit">Invia registrazione</button>
+            Vuoi rimanere aggiornati su altre novità del blog? Iscriviti alla
+            nostra newsletter:
           </p>
-        </form>
-      </div>
+          <form onsubmit="alert('Modulo inviato correttamente')">
+            <div>
+              <input placeholder="Inserisci l'email" />
+              <button type="submit">Iscriviti!</button>
+            </div>
+          </form>
+        </div>
 
-      <aside class="art">
-        <h3>Articoli correlati</h3>
-        <div class="child">
-          <div class="child1">
-            <a href="#"><p>Validare il codice HTML</p></a>
-            <p>Categoria: develop</p>
+        <aside class="art">
+          <h3>ARTICOLI CORRELATI</h3>
+          <div class="child">
+            <div class="child1">
+              <a href="#"><p>Validare il codice HTML</p></a>
+              <p>Categoria: develop</p>
+            </div>
+            <div class="child2">
+              <p>Data: 18-09-2020</p>
+            </div>
           </div>
-          <div class="child2">
-            <p>Data: 18-09-2020</p>
+          <div class="child">
+            <div class="child1">
+              <a href="#"><p>Correggere la sintassi</p></a>
+              <p>Categoria: develop</p>
+            </div>
+            <div class="child2">
+              <p>Data: 16-09-2020</p>
+            </div>
           </div>
-        </div>
-        <div class="child">
-          <div class="child1">
-            <a href="#"><p>Correggere la sintassi</p></a>
-            <p>Categoria: develop</p>
+          <div class="child">
+            <div class="child1">
+              <a href="#"><p>Meno Kb nella pagina</p></a>
+              <p>Categoria: ottimizzazione</p>
+            </div>
+            <div class="child2">
+              <p>Data: 30-09-2020</p>
+            </div>
           </div>
-          <div class="child2">
-            <p>Data: 18-09-2020</p>
-          </div>
-        </div>
-        <div class="child">
-          <div class="child1">
-            <a href="#"><p>Meno Kb nella pagina</p></a>
-            <p>Categoria: ottimizzazione</p>
-          </div>
-          <div class="child2">
-            <p>Data: 18-09-2020</p>
-          </div>
-        </div>
-      </aside>
+        </aside>
+      </main>
 
       <footer class="footer">
         <div class="pie">
-          <hr />
-          <h3>Blog Epicode ©2023</h3>
-          <h3>
+          <p>Blog Epicode ©2021</p>
+          <p>
             Testata online di Mario Rossi, registrata con prot. n.213/2018 - via
-            Luigi Einaudi 2 - Milano. P.IVA 00112233.
-          </h3>
-          <h3>Email: <a href="#">info@epicode.school</a></h3>
+            Luigi Einaudi 2 - Milano.
+          </p>
+          <p>P.IVA 00112233.<a href="#"> info@epicode.school</a></p>
         </div>
       </footer>
+
+      <div>
+        <i class="fa-solid fa-square-pen" style="color: #919191;"></i>
+      </div>
     </div>
   </body>
 </html>

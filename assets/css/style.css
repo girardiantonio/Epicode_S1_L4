@@ -1,27 +1,21 @@
 
 /* IMPOSTAZIONI GENERALI */
-body {
-    font-size: 20px;
-}
 
 .container {
-    background-color: yellow;
-    margin: 50px;
-    width: 600px;
-    border: 2px solid red;
-    padding: 20px;
+    width: auto;
+    margin: 20px;
 }
 
 /* HEADER */
 
 .header {
-    background-color: blue;
-    width: 100%;
-    height: 400px;
+    background-color: rgb(7, 96, 213);
+    height: 350px;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 20px 0 20px 0;
+    margin-bottom: 30px;
 }
 
 .header-one {
@@ -29,10 +23,14 @@ body {
     justify-content: center;
 }
 
+.header-one img {
+    height: 90px;
+}
+
 .header-two h1 {
     display: flex;
     justify-content: center;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 .header-three {
@@ -57,10 +55,9 @@ body {
     padding: 20px;
 }
 
-/* ELEMENTI NEL MAIN - ARTICLE */
 .title h2 {
     text-align: start;
-    font-size: 3.5em;
+    font-size: 2.5em;
     margin-bottom: 40px;
 }
 
@@ -71,44 +68,69 @@ body {
     color: grey;
 }
 
+.content {
+    font-size: 1.4em; 
+}
+ 
 
-.content p {
-    font-size: 1.9em;   
+.content1 span {
+    color: rgb(153, 7, 226);
+}
+
+.content2 span {
+    border-radius: 10px;
+    background-color: rgb(192, 192, 192);
+    border: 2px solid grey;
+}
+
+.content p { 
     margin-bottom: 30px;
 }
 
 .content li {
-    margin-left: 60px;
-    font-size: 1.9em;
+    margin-left: 30px;
+    line-height: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 30px;
 }
 
+.video {
+    margin-bottom: 30px;
+}
+
+.video a {
+    color: rgb(7, 96, 213);
+}
+
 .video p {
-    font-size: 2em;
+    font-size: 1.4em; 
     margin-bottom: 20px;
 }
 
 .video iframe {
+    width: 100%;
     border-radius: 40px;
 }
 
 
 /* TABELLE */
-table {
-    font-size: 2em;
+.table {
+    font-size: 1.4em; 
     text-align: center;
     width: 100%;
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid rgb(7, 96, 213);
     margin-bottom: 30px;
 }
 
 th {
-    background-color: aqua;
+    color: white;
+    background-color: rgb(8, 45, 229);
 }
 
 .table p {
     text-align: center;
-    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 6px;
 }
 
 td, th {
@@ -120,10 +142,12 @@ td, th {
 
 /* FORM */
 .newsletter {
-    width: 100%;
-    height: 400px;
+    padding: 20px;
+    width: auto;
+    height: 250px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: rgb(189, 189, 189);
     border: 2px solid grey;
 }
@@ -131,84 +155,92 @@ td, th {
 .newsletter h3 {
     font-size: 2em;
     text-align: center;
-    margin: 40px 0 40px 0;
 }
 
-form {
-    box-sizing: border-box;
+.newsletter p {
+    font-size: 1.4em; 
 }
 
-form h4 {
-    margin: 10px;
-}
-
-input {
-    width: 435px; 
+.newsletter button {
+    background-color: rgb(7, 96, 213);
+    color: white;
+    width: 100px; 
     padding: 5px; 
-    font-size: 15px"
+    font-size: 1.4em; 
 }
+
+.newsletter input {
+    border-bottom: 2px Dashed grey;
+    width: 160px; 
+    padding: 5px; 
+    font-size: 1.4em; 
+}
+
 
 /* ELEMENTI NELL' ASIDE */
-
 .art h3 {
-    font-size: 2em;
+    font-size: 1.4em;
+    font-weight: bold;
     text-align: center;
     margin: 40px 0 40px 0;
 }
 
 .child {
-    height: 250px;
+    font-size: 1.4em;
+    padding: 20px;
+    width: auto;
+    height: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgb(189, 189, 189);
     margin-top: 20px;
     border: 2px solid grey;
 }
 
 .child1 p {
+    line-height: 1.2em;
     text-align: start;
-    margin: 20px 0 0 20px;
     display: flex;
     flex-direction: column;
     text-align: start;
 }
 
+.child1 a {
+    color: rgb(7, 96, 213);
+}
+
 .child2 p {
-    margin: 0 20px 20px 0;
+    margin: 30px 0 20px 0;
     text-align: end;
 }
 
 
 /* FOOTER */
-
-
-
-
-/* 
-.terms input {
-    margin-right: -200px;
-    margin-left: -200px;
-}
-
-.video {
+.footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 10px;
+    width: auto;
+    height: 150px;
+    color: white;
+    background: linear-gradient(rgb(7, 96, 213), rgb(18, 21, 25));
+    margin-top: 30px;
+    border: 2px solid grey;
 }
 
-ext-align: center;
-}
-
-
-.title {
-    text-align: center;
+.footer a {
+    color: rgb(153, 7, 226);
 }
 
 .pie {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.1em;
     text-align: center;
 }
-
 
 
 
